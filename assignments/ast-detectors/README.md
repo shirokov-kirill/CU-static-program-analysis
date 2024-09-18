@@ -40,6 +40,8 @@ All of this enables us to practice writing simple analyses on a small yet real-w
 6. **Running linters and tests:** Ensure the ESLint linter and the Prettier formatter don't report on your code and your detector passing tests: `yarn test-all`
 7. **Committing changes:** Commit and push changes to your fork. Create a pull request to the main repo: [https://github.com/Static-Homeworks-CUB/fall2024/pulls](https://github.com/Static-Homeworks-CUB/fall2024/pulls)
 
+If you have any questions regarding the task description, feel free to reach out to us in the issue. Otherwise, we are available in the course chat.
+
 ## Resources
 
 1. https://nowarp.io/tools/misti/docs/next/ – Misti Documentation
