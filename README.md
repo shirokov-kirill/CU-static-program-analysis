@@ -1,7 +1,7 @@
 # Static Program Analysis: Fall2024 Assignments
 
 ## Assignments
-* [Assignment 1: Writing an AST-based Detector](./assignments/ast-detectors/README.md)
+* [Assignment 1: Writing an AST-based Detector](./assignments/1-ast-detectors/README.md)
 
 ## Submitting assignments
 

@@ -7,7 +7,7 @@ describe("SingleLetterIdentifier detector tests", () => {
 
     // Create a driver instance that runs only the given custom detector
     const detectorPath =
-      "assignments/ast-detectors/single-letter-identifier/singleLetterIdentifier.ts";
+      "assignments/1-ast-detectors/single-letter-identifier/singleLetterIdentifier.ts";
     const className = "SingleLetterIdentifier";
     const driver = await Driver.create(contractPath, {
       detectors: [`${detectorPath}:${className}`],
@@ -19,7 +19,7 @@ describe("SingleLetterIdentifier detector tests", () => {
 
     // Execute the driver
     // You could also get the complete output by running Misti this way:
-    //   export DIR=assignments/ast-detectors/single-letter-identifier
+    //   export DIR=assignments/1-ast-detectors/single-letter-identifier
     //   yarn misti --detectors $DIR/singleLetterIdentifier.ts:SingleLetterIdentifier $DIR:/test/contract.tact
     const result = await driver.execute();
     expect(result.warningsFound).toBe(4);
