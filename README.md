@@ -22,6 +22,7 @@ git push origin <issue-number>-<assignment-name>
 ```
 5. Create a PR in the original repository: https://github.com/Static-Homeworks-CUB/fall2024/pulls
 6. Ensure there are no issues reported by the CI.
+7. Wait for the review. Once your PR is approved, it will be merged into the `master` branch, and the assignment will be considered completed.
 
 ## Assignment eligibility criteria
 When reviewing assignment PRs, we consider the following criteria:

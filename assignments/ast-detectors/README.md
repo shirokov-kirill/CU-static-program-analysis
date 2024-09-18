@@ -83,7 +83,11 @@ If you have any questions regarding the task description, feel free to reach out
 
 ## Resources
 
-1. https://nowarp.io/tools/misti/docs/next/ – Misti Documentation
-2. https://nowarp.io/tools/misti/api/ – Misti API reference
-3. https://docs.tact-lang.org/ – Tact Documentation
-4. https://github.com/tact-lang/tact/blob/main/src/grammar/ast.ts – Tact AST
+1. [Static Program Analysis](https://cs.au.dk/~amoeller/spa/spa.pdf) by Anders Møller and Michael I. Schwartzbach (2024) – A textbook, if you need a recap on basics of program analysis.
+2. https://nowarp.io/tools/misti/docs/next/ – Misti Documentation (ensure you are reading the `next` version)
+3. https://nowarp.io/tools/misti/api/ – Misti API reference
+4. https://docs.tact-lang.org/ – Tact Documentation
+5. https://tact-by-example.org/all – Example Tact contracts with the description
+6. https://github.com/tact-lang/tact/tree/main/examples and https://github.com/tact-lang/tact/tree/main/src/test/e2e-emulated/contracts – More Tact contracts
+7. https://github.com/tact-lang/tact/blob/main/src/grammar/ast.ts – Tact AST
+8. https://www.typescriptlang.org/docs/ – TypeScript documentation
