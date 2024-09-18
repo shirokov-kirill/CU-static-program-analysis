@@ -13,6 +13,45 @@ The goal of the first assignment is to write a simple AST-based detector for [Mi
 
 All of this enables us to practice writing simple analyses on a small yet real-world project.
 
+## Installation
+The instructions below assume you are working on a Unix-like system, preferably Linux.
+
+### Using docker
+If you don't want to waste your time on setting up the Node.js development environment, you could use the prepared docker container:
+
+```bash
+docker pull jubnzv1/cub-fall2024:latest
+```
+
+Then you could introduce your changes in the `assignments` directory and switch to the Docker container in order to build the project:
+```bash
+docker run -it --rm -v $(pwd)/assignments:/home/student/assignments cub-fall2024
+```
+
+In the docker container the following commands are available:
+* `yarn build` – Build the project
+* `yarn fmt` – Check formatting
+* `yarn lint` – Run ESLint
+* `yarn test ./assignments/your-detector.spec.ts` – Run your unit tests
+* `yarn misti --detectors ./assignments/your-detector.ts:YourDetectorClassName /path/to/contract.tact` – Running Misti solely with your detector
+
+### Installing locally
+1. Install Node.js version 22 or higher. You can do this using `nvm`:
+```bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
+nvm install v22.2.0 && nvm alias default v22.2.0
+```
+2. Install Soufflé according to the [official installation instructions](https://souffle-lang.github.io/install)
+3. Install Yarn: `npm install -g yarn`
+4. Install the latest version of Misti:
+```
+git submodule update --init --recursive
+pushd ./deps/misti/
+yarn install && yarn build
+popd
+```
+5. Build the npm dependencies: `yarn install`
+
 ## Assignment steps
 
 1. **Choosing a task:** Choose [one of the issues labeled `assignment-1`](https://github.com/Static-Homeworks-CUB/fall2024/issues?q=label%3A%22assignment-1%22) or suggest your own detector:
