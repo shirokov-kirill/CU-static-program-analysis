@@ -54,7 +54,7 @@ popd
 
 ## Assignment steps
 
-1. **Choosing a task:** Choose [one of the issues labeled `assignment-1`](https://github.com/Static-Homeworks-CUB/fall2024/issues?q=label%3A%22assignment-1%22) or suggest your own detector:
+1. **Choosing a task:** Choose [one of the non-assigned issues labeled `assignment-1`](https://github.com/Static-Homeworks-CUB/fall2024/issues?q=is%3Aissue+is%3Aopen+no%3Aassignee) or suggest your own detector:
    <details>
    <summary>Suggesting your own detector</summary>
 
