@@ -25,7 +25,7 @@ docker pull jubnzv1/cub-fall2024:latest
 
 Then you could introduce your changes in the `assignments` directory and switch to the Docker container in order to build the project:
 ```bash
-docker run -it --rm -v $(pwd)/assignments:/home/student/assignments cub-fall2024
+docker run -it --rm -v $(pwd)/assignments:/home/student/assignments jubnzv1/cub-fall2024:latest
 ```
 
 In the docker container the following commands are available:
