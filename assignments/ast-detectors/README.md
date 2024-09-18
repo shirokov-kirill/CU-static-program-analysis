@@ -6,7 +6,7 @@ The goal of the first assignment is to write a simple AST-based detector for [Mi
 
 [Misti](https://nowarp.io/tools/misti) is a static analyzer for the [Tact](https://tact-lang.org) smart-contract language. Some details about it:
 
-- It has a small source code base written in TypeScript.
+- It has a small source code base [written in TypeScript](https://matklad.github.io/2023/08/17/typescript-is-surprisingly-ok-for-compilers.html).
 - It targets a statically-typed language used in production.
 - It is well-documented; the [documentation](https://nowarp.io/tools/misti/docs/next/) and the [API reference](https://nowarp.io/tools/misti/api/) are available.
 - It provides an API to write custom detectors to implement AST-based, dataflow, and Datalog-based analyses.
