@@ -13,6 +13,7 @@
     "lint": "eslint assignments",
     "fmt": "prettier --check assignments",
     "test-all": "yarn fmt && yarn lint && yarn test",
+    "fix-all": "yarn fmt --write && yarn lint --fix",
     "misti": "ts-node ./deps/misti/src/main.ts"
   },
   "dependencies": {
