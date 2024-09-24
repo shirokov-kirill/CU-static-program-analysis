@@ -1,13 +1,13 @@
 import { Driver } from "@nowarp/misti/src/cli";
 import path from "path";
 
-describe("varDetector tests", () => {
+describe("UntypedLetDetector tests", () => {
   it("should detect an issue in the sample contract", async () => {
     const contractPath = path.resolve(__dirname, "test", "contract.tact");
 
     const detectorPath =
-      "assignments/1-ast-detectors/varDetector/varDetector.ts";
-    const className = "VarDetector";
+      "assignments/1-ast-detectors/untypedLetDetector/untypedLetDetector.ts";
+    const className = "UntypedLetDetector";
     const driver = await Driver.create(contractPath, {
       detectors: [`${detectorPath}:${className}`],
     });

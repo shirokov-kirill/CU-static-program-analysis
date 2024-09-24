@@ -6,7 +6,30 @@ import {
 } from "@nowarp/misti/dist/src/internals/warnings";
 import { forEachStatement } from "@nowarp/misti/dist/src/internals/tactASTUtil";
 
-export class VarDetector extends ASTDetector {
+/**
+ * The detector that highlights variable definitions that use local type inference.
+ *
+ * ## Context
+ * Tact supports local type inference for variables. This means the developer can write both:
+ * ```tact
+ * let a: Int = 42;
+ * let a = 42;
+ * ```
+ *
+ * This detector should highlight untyped `let` definitions, as the explicit definition
+ * may be more readable.
+ *
+ * ## Example
+ * ```tact
+ * let a = 42; // Highlighted
+ * ```
+ *
+ * Use instead:
+ * ```tact
+ * let a: Int = 42;
+ * ```
+ */
+export class UntypedLetDetector extends ASTDetector {
   warnings: MistiTactWarning[] = [];
 
   async check(cu: CompilationUnit): Promise<MistiTactWarning[]> {
