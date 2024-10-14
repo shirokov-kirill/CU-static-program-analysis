@@ -24,3 +24,6 @@ Use the environment configured for [the previous assignment](../1-ast-detectors/
 3. **Examining the source code:** Examine the source code in this directory. You can look at [the `LiveVariables` analysis](./liveVariables) as an example. For this task, we are only interested in printing analysis results, without generating any warnings.
 
 Then, follow the workflow from the previous assignment to accomplish the task.
+
+## Resources
+See the records and slides for Lecture 3 and Seminar 3.
