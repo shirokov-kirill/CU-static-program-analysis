@@ -2,6 +2,7 @@
 
 ## Assignments
 * [Assignment 1: Writing an AST-based Detector](./assignments/1-ast-detectors/README.md)
+* [Assignment 2: Writing a Gen-Kill Analysis](./assignments/2-gen-kill-analyses/README.md)
 
 ## Submitting assignments
 
